@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table,
+        td,
+        th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        }
+        table {
+        width: 100%;
+        }
+        </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Nacionalidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Belen</td>
+                <td>Linera</td>
+                <td>22</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>25</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Garcia</td>
+                <td>29</td>
+                <td>Argentina</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Club</th>
+                <th colspan="4">Nacionalidad / Año</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Belen</td>
+                <td>Linera</td>
+                <td>22</td>
+                <td><a href="http://Newells.com" target="_blank">Newells</a></td>
+                <td rowspan="4">Argentina</td>
+                <td>2016</td>
+                
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>25</td>
+                <td><a href="http://Boca.com" target="_blank">Boca</a></td>
+                <td>2017</td>
+                
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Garcia</td>
+                <td>29</td>
+                <td><a href="http://river.com" target="_blank">River</a></td>
+                <td>2018</td>
+                
+            </tr>
+            <tr>
+                <td>Gonzalo</td>
+                <td>Marin</td>
+                <td>33</td>
+                <td><a href="http://SanLorenzo.com" target="_blank">San Lorenzo</a></td>
+                <td>2019</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Todos los jugadores son argentinos</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
