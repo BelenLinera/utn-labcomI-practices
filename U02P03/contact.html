@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Ma Belen Linera</h1>
+    </header>
+    <div class="container">
+    <!-- Navegación / cotenedor izquierdo -->
+    <nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="multimedia.html" target="_blank">Multimedia</a></li>
+        <li><a href="contact.html" target="_blank">Contacto</a></li>
+    </ul>
+    </nav>
+    <!-- Contenedor principal -->
+    <main>
+        <form action="accion.php" method="POST" target="_blank">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <br/><br/>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required />
+            <br/><br/>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="0" />
+            <br/><br/>
+            <label for="color">Color</label>
+            <input type="text" name="color" id="color"  />
+            <br/><br/>
+            <label for="comentario">Comentario</label>
+            <input type="text" name="comentario" id="comentario" minlength="10" />
+            <br/><br/>
+            <input type="submit" value="Enviar" />
+            <br/><br/>
+            
+        </form>
+    </main>
+            <!-- Contenedor secundario / derecho -->
+            <div class="right">
+            <h2>Informacion</h2>
+            <p>Soy de Rojas, prov de BsAS, naci el 17 de marzo del 2000</p>
+            </div>
+            </div>
+            <!-- Pie de Página-->
+            <footer>
+            <p>© copyright labcomII.com</p>
+            </footer>
+</body>
+</html>
