@@ -43,6 +43,9 @@ html {
             .nav-item:hover a {
             color: blue;
             }
+            .nav-item:hover a {
+            color: greenyellow;
+            }
         .nav-item {
             background-color: orange;
         }
