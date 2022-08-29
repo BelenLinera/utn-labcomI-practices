@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    flex-grow: 3;
+    background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    align-items: center;
+}
+li:hover a{
+    background-color: rgb(225,133,133);
+}   
+li{
+    display: inline-flex;
+    border: 1px solid rgb(39,2,2);
+    border-radius: 5px;
+}
+.logo{
+    width: 20%;
+    height: 20%;
+}
+
+.profile{
+    width: 29px;
+    height: 29px;
+}
+
+main{
+    font-family: 'Times New Roman', Times, serif;
+}
+.alumnos{
+    width: 40%;
+    height: 40%;
+}
