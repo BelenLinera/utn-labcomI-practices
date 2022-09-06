@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 3 JavaScript</title>
+</head>
+<body>
+    <script>
+        var nombre = prompt ('Ingrese el nombre: ');
+        var cant_preg = prompt('Ingrese la cantidad total de preguntas');
+        var cant_preg_cor = prompt ('Ingrese la cantidad de preguntas correctas');
+        var porc = (cant_preg_cor / cant_preg) * 100
+
+        if (porc >= 90){
+            document.write("Nivel superior");
+        } else if (porc >=75){
+            document.write("Nivel medio")
+        } else if (porc >= 50){
+            document.write("Nivel regular");
+        } else if (porc < 50){
+            document.write("Fuera de nivel")
+        }
+    </script>
+</body>
+</html>
