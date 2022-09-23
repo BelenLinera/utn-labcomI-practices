@@ -1,0 +1,60 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--color-theme);
+    background-image: linear-gradient(to right, var(--color-theme), rgb(11,164,136));
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom: solid 3px #5df2d6;
+}
+
+form{
+    text-align: center;
+}
+
+#ingresociudad{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.boton{
+    background-color: #00594c;
+    color: #fff;
+    width: 80px;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 0px solid white;
+}
+
+.addConExito{
+    background-color:#28a745;
+    color: #fff;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 0px solid white;
+    text-align: center;
+}
+
+.addConError{
+    background-color:#dc3545;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    border: 0px solid white;
+    text-align: center;
+}
+
+.addRepetida{
+    background-color:#ffc107;
+    color: #fff;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 0px solid white;
+    text-align: center
+}

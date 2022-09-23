@@ -4,21 +4,24 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUP LC2 - TP Integrador</title>
+    <title>Clima App</title>
+    <link rel="shortcut icon" href="css/img7weather.png">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/help.css">
 </head>
 
 <body>
     <header>
-        <h1>
+        <h1> 
+            <img src="https://cdn-icons-png.flaticon.com/512/984/984585.png" widht="50px" height="50px"/>
             <span>Clima App</span>
         </h1>
         <nav>
             <ul>
-                <li><a href="file:///C:/SourceCode/UTN/LabComI/utn-labcomI-practices/tup-lc2-clima-app/index.html">Clima</a></li>
-                <li><a href="file:///C:/SourceCode/UTN/LabComI/utn-labcomI-practices/tup-lc2-clima-app/add-city.html">Agregar Ciudad</a></li>
-                <li class="current-page"><a href="#">Ayuda</a></li>
+                <li><a href="index.html">Clima</a></li>
+                <li><a href="addcity.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="help.html">Ayuda</a></li>
             </ul>
         </nav>
     </header>
@@ -26,41 +29,39 @@
     <main>
         <h2>Ayuda Clima App v.1.0</h2>
         <p>Esta App te permite consultar el clima de una ciudad en particular utilizando la API de 
-            <a href="http://openweathermap.org/api" target="_blank" title="Hace click para ir">OpenWeatherMap</a>
+            <a href="http://openweathermap.org/api" target="_blank">OpenWeatherMap</a>
         </p>
-        <br/>
         <p>
         Para poder consultar el clima, primero deberá
-        <a href="file:///C:/SourceCode/UTN/LabComI/utn-labcomI-practices/tup-lc2-clima-app/add-city.html" title="Hace click">Agregar una ciudad</a>
+        <a href="add-city.html" title="Hace click">Agregar una ciudad</a>
         y luego seleccionar la Ciudad en cuestión desde la página 
-        <a href="file:///C:/SourceCode/UTN/LabComI/utn-labcomI-practices/tup-lc2-clima-app/index.html" title="Hace click">Clima</a>
-        <br/>
-        <form>
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre" />
-            <br/>
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email" />
-            <br/>
-            <label for="nombre">Mensaje: </label>
-            <textarea name="textarea" rows="10" cols="30"></textarea>
-            <br/>
-            <input type="submit" value="Limpiar" />
-            <input type="submit" value="Enviar" />
-        </form>
+        <a href="index.html" title="Hace click">Clima</a>
         </p>
-            <section id="form-city-list">
-                <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
-            </section>
-            <section id="section-weather-result">
-                <!-- Sección donde se debe mostrar el clima de la ciudad -->
-            </section>
+        <section>
+            <form action="">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" />
+                
+                <label for="correo">Email: </label>
+                <input type="email" id="correo" name="correo" />
+                
+                <label for="mensaje">Mensaje: </label>
+                <textarea name="mensaje" id="mensaje" rows="10" cols="30"></textarea>
+                
+                <div class="contenedorBotones">
+                    <input type="button" name="limpiar" value="Limpiar" class="botones" >
+                    <input type="submit" name="enviar" value="Enviar" class="botones">
+                </div>
+                <p class="parrafo4">Ingrese un Email valido</p>
+            </form>
+        </section>
     </main>
 
     <footer>
         <p>
             Desarrollado con ♥ - LC2
         </p>
+        
     </footer>
 </body>
 

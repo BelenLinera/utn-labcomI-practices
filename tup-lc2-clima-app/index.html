@@ -2,23 +2,28 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUP LC2 - TP Integrador</title>
+    <title>Clima App</title>
+
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 
 <body>
+
     <header>
         <h1>
+            <img src="https://cdn-icons-png.flaticon.com/512/984/984585.png" widht="50px" height="50px"/>
             <span>Clima App</span>
         </h1>
+        
         <nav>
             <ul>
-                <li class="current-page"><a href="#">Clima</a></li>
-                <li><a href="file:///C:/SourceCode/UTN/LabComI/utn-labcomI-practices/tup-lc2-clima-app/add-city.html">Agregar Ciudad</a></li>
-                <li><a href="file:///C:/SourceCode/UTN/LabComI/utn-labcomI-practices/tup-lc2-clima-app/help.html">Ayuda</a></li>
+                <li class="current-page"><a href="index.html">Clima</a></li>
+                <li><a href="addcity.html">Agregar Ciudad</a></li>
+                <li><a href="help.html">Ayuda</a></li>
             </ul>
         </nav>
     </header>
@@ -26,30 +31,32 @@
     <main>
         <h2>El Clima Ahora</h2>
             <section id="form-city-list">
-                <form>
-                    <select name="seleccionar ciudad" id="seleccionar ciudad">
-                        <option name="Seleccionar ciudad" - value="" - disabled - selected>Seleccionar ciudad</option>
-                        <option name="Rosario" - value="ROSARIO">Rosario</option>
-                        <option name="Rafaela" - value="RAFAELA">Rafaela</option>
-                    </select>
-                    <input type="submit" value="Consultar" />
-                </form>
                 <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
+                <form action="">
+                    <select class="textos" name="seleccionar ciudad" >
+                        <option value="Seleccionar ciudad" disabled>Seleccionar ciudad</option>
+                        <option  value="Rosario" selected>Rosario</option>
+                        <option value="Rafaela">Rafaela</option>
+                    </select>
+                    
+                    <input class="botones" type="button" value="Consultar" />
+                    
+                </form>
+                
             </section>
             <section id="section-weather-result">
-                <div>
-                    <card>
+ <!-- Sección donde se debe mostrar el clima de la ciudad -->
+           
+                <div class="card">
                         <h3>Rosario</h3>
-                            <img src="http://openweathermap.org/img/wn/01d@2x.png">
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" height="60px" width="60px">
                         <p>Temperatura: 25.31º</p>
                         <p>Sensacion térmica: 24.65º</p>
                         <p>Humedad: 29%</p>
                         <p>Velocidad del viento: 4.63km/h</p>
                         <p>Presión: 1001 P</p>
-                    </card>
                 </div>
-                <!-- Sección donde se debe mostrar el clima de la ciudad -->
             </section>
     </main>
 

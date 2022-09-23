@@ -2,42 +2,50 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUP LC2 - TP Integrador</title>
-    <!-- Estilos CSS -->
+    <title>Clima App</title>
+    <link rel="shortcut icon" href="css/img/weather.png">
+    <!-- Estilos CSS ""-->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href=”css/common/addcity.css”>
 </head>
 
 <body>
     <header>
         <h1>
+            <img src="https://cdn-icons-png.flaticon.com/512/984/984585.png" widht="50px" height="50px"/>
             <span>Clima App</span>
         </h1>
         <nav>
             <ul>
-                <li><a href="file:///C:/SourceCode/UTN/LabComI/utn-labcomI-practices/tup-lc2-clima-app/index.html">Clima</a></li>
-                <li class="current-page"><a href="#">Agregar Ciudad</a></li>
-                <li><a href="file:///C:/SourceCode/UTN/LabComI/utn-labcomI-practices/tup-lc2-clima-app/help.html">Ayuda</a></li>
+                <li><a href="index.html">Clima</a></li>
+                <li class="current-page"><a href="addcity.html">Agregar Ciudad</a></li>
+                <li><a href="help.html">Ayuda</a></li>
             </ul>
         </nav>
     </header>
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar Ciudad</h2>
-            <section id="form-city-list">
+        <section id="form-city-list">
                 <form>
-                    <label for="ciudad">Ingrese la ciudad a agregar: </label>
-                    <input type="text" id="ciudad" name="ciudad" />
-                    <br/>
-                    <input type="submit" value="Agregar" />
+                    <label for="agregarciudad">Ingrese la ciudad a agregar: </label>
+                    <input id="ingresociudad" type="text" value="" />
+                    <input class="boton" type="buttom" value="Agregar" />
                 </form>
+            </section>   
+            <section id="section-weather-result"> 
+                    <div>
+                        <p class="addConExito">Ciudad agregada con exito</p>
+                        <p class="addConError">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
+                        <p class="addRepetida">La ciudad almacenada ya se encuentra almacenada</p>
+                    </div>
+            </section>
                 <!--  Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
-            </section>
-            <section id="section-weather-result">
-                <!-- Sección donde se debe mostrar el clima de la ciudad -->
-            </section>
+            
+            
     </main>
 
     <footer>
